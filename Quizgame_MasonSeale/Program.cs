@@ -106,10 +106,12 @@ namespace Quizgame_MasonSeale
         static void questionsetup()
         {
             questions.Add("Question 1: What is a statement that is like an if, but takes cases?");
+            questions.Add("Question 2: This will cause an error, why?  if(int a = x){...");
         }
         static void optionsetup()
         {
             options.Add("1. switch 2. else 3. or . 4. if");
+            options.Add("1. x and a are diffrent variables, 2. needs == not =, 3.  4.");
         }
         static void endcheck()
         {
