@@ -88,7 +88,7 @@ namespace Quizgame_MasonSeale
             {
                 Console.WriteLine("correct");
                 points += 1;
-                
+                Console.WriteLine(points);
             }
             else if(playerchoice == correct[current])
             {
@@ -99,23 +99,29 @@ namespace Quizgame_MasonSeale
         {
             Console.Clear();
             Console.WriteLine();
-            Console.Write($"{playername}, {(points / correct.Count) * 100}, Question#{current + 1}");
+            Console.Write($"{playername}, {points *100 /correct.Count}%, Question#{current + 1}");
             Console.WriteLine();
         }
         static void listsetup()
         {
             correct.Add(1);
             correct.Add(2);
+            correct.Add(3);
+            correct.Add(3);
         }
         static void questionsetup()
         {
             questions.Add("Question 1: What is a statement that is like an if, but takes cases?");
             questions.Add("Question 2: This will cause an error, why?  if(int a = x){...");
+            questions.Add("Question 3: What Kind of loop is most likely to freeze a computer?");
+            questions.Add("Question 4: what is it called when a number in the int value gose from its highest value to the lowest?");
         }
         static void optionsetup()
         {
             options.Add("1. switch 2. else 3. or . 4. if");
             options.Add("1. x and a are diffrent variables, 2. needs == not =, 3. x dose not equal a  4. something outside the statment is messing it up ");
+            options.Add("1. for, 2. foreach, 3. while, 4. none of the above");
+            options.Add("1. underflow 2. overlap 3. overflow 4. a problem");
         }
         static void endcheck()
         {
