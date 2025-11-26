@@ -41,6 +41,10 @@ namespace Quizgame_MasonSeale
                     Console.ReadKey(true);
                 }
                 endcheck();
+                if(ending == true)
+                {
+                    break;
+                }
 
             }
             Console.WriteLine("end");
@@ -111,29 +115,38 @@ namespace Quizgame_MasonSeale
         static void optionsetup()
         {
             options.Add("1. switch 2. else 3. or . 4. if");
-            options.Add("1. x and a are diffrent variables, 2. needs == not =, 3.  4.");
+            options.Add("1. x and a are diffrent variables, 2. needs == not =, 3. x dose not equal a  4. something outside the statment is messing it up ");
         }
         static void endcheck()
         {
             Console.Clear();
             Console.WriteLine("Would you like to go again?");
-            ConsoleKeyInfo holder = Console.ReadKey(true);
-            if (holder.Key == ConsoleKey.Y)
+            
+            while (true)
             {
-                Console.Clear();
-                Console.WriteLine("Very well");
-                Console.ReadKey(true);
-            }
-            if(holder.Key == ConsoleKey.N)
-            {
-                Console.Clear();
-                Console.WriteLine("Understood");
-                Console.WriteLine("Have a nice day");
-                Console.ReadKey();
-                ending = true;
-                
-            }
+                ConsoleKeyInfo holder = Console.ReadKey(true);
 
+
+                if (holder.Key == ConsoleKey.Y)
+                {
+                    points = 0;
+                    current = 0;
+                    Console.Clear();
+                    Console.WriteLine("Very well");
+                    Console.ReadKey(true);
+                    break;
+                }
+                if (holder.Key == ConsoleKey.N)
+                {
+                    Console.Clear();
+                    Console.WriteLine("Understood");
+                    Console.WriteLine("Have a nice day");
+                    Console.ReadKey();
+                    ending = true;
+                    break;
+                }
+                Console.WriteLine("Y or N");
+            }
         }
     }
 }
