@@ -120,7 +120,7 @@ namespace Quizgame_MasonSeale
         static void optionsetup()
         {
             options.Add("1. switch 2. else 3. or . 4. if");
-            options.Add("1. x and a are diffrent variables, 2. needs == not =, 3. x dose not equal a  4. something outside the statement");
+            options.Add("1. x and a are different variables, 2. needs == not =, 3. x dose not equal a  4. something outside the statement");
             options.Add("1. for, 2. foreach, 3. while, 4. none of the above");
             options.Add("1. underflow 2. overlap 3. overflow 4. a problem");
             options.Add(@"1. data.text, 2.""data.txt"", 3. find(data.text) 4. Data");
