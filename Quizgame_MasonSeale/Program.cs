@@ -108,14 +108,24 @@ namespace Quizgame_MasonSeale
             correct.Add(3);
             correct.Add(3);
             correct.Add(2);
+            correct.Add(1);
+            correct.Add(3);
+            correct.Add(4);
+            correct.Add(3);
+
+           
         }
         static void questionsetup()
         {
             questions.Add("Question 1: What is a statement that is like an if, but takes cases?");
             questions.Add("Question 2: This will cause an error, why?  if(int a = x){...");
             questions.Add("Question 3: What Kind of loop is most likely to freeze a computer?");
-            questions.Add("Question 4: what is it called when a number in the int value goes from its highest value to the lowest?");
-            questions.Add(@"Question 5: if I use this to read a file... string[]map = File.ReadAllLines(path)... what dose the string ""path"" equal if the file is called data.text?");
+            questions.Add("Question 4: What is it called when a number in the int value goes from its highest value to the lowest?");
+            questions.Add(@"Question 5: If I use this to read a file... string[]map = File.ReadAllLines(path)... what dose the string ""path"" equal if the file is called data.txt?");
+            questions.Add("Question 6: While using SetCursorPosition(0,0)... what happens when you add one to the second item?");
+            questions.Add("Question 7: What happens when a private variable is used in a static field?");
+            questions.Add("Question 8: If visual studio ever stops being able to start debugging, even if there is no errors, what must you do?");
+            questions.Add("Question 9: What is the file extension name for the file github puts into a repo?");
         }
         static void optionsetup()
         {
@@ -123,7 +133,11 @@ namespace Quizgame_MasonSeale
             options.Add("1. x and a are different variables, 2. needs == not =, 3. x dose not equal a  4. something outside the statement");
             options.Add("1. for, 2. foreach, 3. while, 4. none of the above");
             options.Add("1. underflow 2. overlap 3. overflow 4. a problem");
-            options.Add(@"1. data.text, 2.""data.txt"", 3. find(data.text) 4. Data");
+            options.Add(@"1. data.txt, 2.""data.txt"", 3. find(data.text) 4. Data");
+            options.Add("1. it will move down, 2. it will move right, 3. it will move left, 4. it will move up");
+            options.Add("1. nothing important, 2. it gives you a warning but continue, 3. it will not function 4. it will instantly crash your computer");
+            options.Add("1. punch the monitor, 2. prey 3. close visual studio via task manager 4. restart the pc");
+            options.Add("1. .get, 2. .got, 3. .git, 4. .txt");
         }
         static void endcheck()
         {
