@@ -169,7 +169,7 @@ namespace Quizgame_MasonSeale
         {
             Console.Clear();
             Console.WriteLine();
-            Console.Write($"{playername}, {points *100 /correct.Count}%, Question#{current + 1}");
+            Console.Write($"{playername}, Current score: {points *100 /correct.Count}%, Question#{current + 1}");
             Console.WriteLine();
         }
         static void listsetup()
